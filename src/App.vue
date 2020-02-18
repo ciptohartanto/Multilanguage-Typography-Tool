@@ -30,11 +30,14 @@ export default {
     border-radius: 8px
     display: block
     margin-left: 170px
-    margin-top: 170px
+    
     box-shadow: 0 0 10px rgba(black, .1)
     
 
 body
   @media screen and (min-width: 1060px)
+    display: flex
+    align-items: center
+    height: 100vh
     background-color: #f0f0f0
 </style>

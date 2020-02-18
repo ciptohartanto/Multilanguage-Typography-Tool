@@ -1,5 +1,5 @@
 <template lang="pug">
-  .floatEditButton(@click='activateControlPanel')
+  .floatEditButton(@click='activateControlPanel' v-if='isPopup === false')
     .floatEditButton-icon
       include ./../assets/edit.svg
 </template>
@@ -10,6 +10,11 @@ export default {
   methods: {
     activateControlPanel() {
       this.$store.commit('setPopup', true)
+    }
+  },
+  computed: {
+    isPopup() {
+     return this.$store.state.isPopup
     }
   }
 }
@@ -31,8 +36,15 @@ export default {
   z-index: 3
   cursor: pointer
   @media screen and (min-width: 1060px)
-    left: 450px
-    bottom: 400px
+    left: 590px
+    top: 50%
+    transform: translateY(-50%)
+    &:before
+      content: 'Edit Text'
+      position: absolute
+      font-size: 20px
+      font-weight: bold
+      right: -90px
   &-icon
     display: block
     width: 50%
