@@ -30,6 +30,9 @@ export default {
   box-shadow: 0 0 4px rgba(black, .7)
   z-index: 3
   cursor: pointer
+  @media screen and (min-width: 1060px)
+    left: 450px
+    bottom: 400px
   &-icon
     display: block
     width: 50%

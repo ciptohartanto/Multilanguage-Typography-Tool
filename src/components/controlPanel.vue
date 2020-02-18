@@ -114,7 +114,12 @@ export default {
   height: 100vh
   overflow-y: scroll
   -webkit-overflow-scroll: touch
-  
+  @media screen and (min-width: 1060px)
+    background-color: white
+    position: fixed
+    width: 375px
+    right: 0
+    left: auto
   &-button
     position: fixed
     bottom: 0
@@ -128,6 +133,11 @@ export default {
     display: flex
     align-items: center
     justify-content: center
+    @media screen and (min-width: 1060px)
+      position: fixed
+      width: 375px
+      right: 0
+      left: auto
     
   &-body
     padding-bottom: 100px
