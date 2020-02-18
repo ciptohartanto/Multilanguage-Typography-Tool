@@ -4,6 +4,7 @@
     component-keywords
     component-sliding-cards
     component-trending-stories
+    component-button
     component-float-edit-button
 
 </template>
@@ -13,6 +14,7 @@ import componentArticle from './../components/article'
 import componentKeywords from './../components/keywords'
 import componentSlidingCards from './../components/slidingCards'
 import componentTrendingStories from './../components/trendingStories'
+import componentButton from './../components/button'
 import componentFloatEditButton from './../components/floatEditButton'
 
 export default {
@@ -22,6 +24,7 @@ export default {
     componentKeywords,
     componentSlidingCards,
     componentTrendingStories,
+    componentButton,
     componentFloatEditButton
   }
 }

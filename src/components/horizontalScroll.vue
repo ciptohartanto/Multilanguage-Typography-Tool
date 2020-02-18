@@ -24,6 +24,8 @@ export default {
     overflow: hidden
     margin-left: -18px
     margin-right: -18px
+    -webkit-overflow-scroll: touch
+    
   &-child
     display: flex
     position: relative
@@ -31,6 +33,7 @@ export default {
     overflow-x: scroll
     white-space: nowrap
     padding-left: 18px
+    -webkit-overflow-scroll: touch
 
     > *
       white-space: normal //to cancel the white-space to all decendants

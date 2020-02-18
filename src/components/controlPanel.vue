@@ -6,31 +6,31 @@
         
       .controlPanel-section
         .controlPanel-title Article
-        textarea.controlPanel-textarea(placeholder="Article Title" v-model="newTitle" @input="setNewTitle")
+        input.controlPanel-textarea(type="text" placeholder="Article Title" v-model="newTitle" @input="setNewTitle")
         
-        textarea.controlPanel-textarea(placeholder="Article Headline Author" v-model="newHeadlineAuthor" @input="setNewHeadlineAuthor")
+        input.controlPanel-textarea(type="text" placeholder="Article Headline Author" v-model="newHeadlineAuthor" @input="setNewHeadlineAuthor")
         
-        textarea.controlPanel-textarea(placeholder="Article Headline Published Date" v-model="newHeadlinePublishedDate" @input="setNewHeadlinePublishedDate")
+        input.controlPanel-textarea(type="text" placeholder="Article Headline Published Date" v-model="newHeadlinePublishedDate" @input="setNewHeadlinePublishedDate")
         
-        textarea.controlPanel-textarea(placeholder="Article Image Caption" v-model="newImageCaption" @input="setNewImageCaption")
+        input.controlPanel-textarea(type="text" placeholder="Article Image Caption" v-model="newImageCaption" @input="setNewImageCaption")
         
         textarea.controlPanel-textarea(placeholder="Article Body Text, format: <p>test</p>" v-model="newArticleText" @input="setNewArticleText" rows="6")
         
       .controlPanel-section
         .controlPanel-title Keywords
-        input.controlPanel-textarea(placeholder="Module Name (Keywords)" v-model="newKeywordTitle" @input="setNewKeywordTitle")
+        input.controlPanel-textarea(placeholder="Section Title (Keywords)" v-model="newKeywordTitle" @input="setNewKeywordTitle")
         textarea.controlPanel-textarea(placeholder="Keywords List" v-model="newKeywords" @input="setNewKeywords")
         
         
       .controlPanel-section
         .controlPanel-title Sliding Cards
-        input.controlPanel-textarea(placeholder="Module Name (Sliding Card)" v-model="newSlidingCardsTitle" @input="setSlidingCardsTitle")
+        input.controlPanel-textarea(placeholder="Section Title (More in 'Soccer')" v-model="newSlidingCardsTitle" @input="setSlidingCardsTitle")
         textarea.controlPanel-textarea(placeholder="Keywords List" v-model="newSlidingCards" @input="setNewSlidingCards" rows="6")
         
         
       .controlPanel-section
         .controlPanel-title Trending Now
-        input.controlPanel-textarea(placeholder="Module Name (Sliding Card)" v-model="newTrendingArticlesTitle" @input="setTrendingArticlesTitle")
+        input.controlPanel-textarea(placeholder="Section Title (Trending Now)" v-model="newTrendingArticlesTitle" @input="setTrendingArticlesTitle")
         textarea.controlPanel-textarea(placeholder="Keywords List" v-model="newTrendingArticles" @input="setNewTrendingArticles" rows="6")
         
         
@@ -56,9 +56,9 @@ export default {
       newKeywords: JSON.stringify(this.$store.state.keywords),
       newSlidingCards: JSON.stringify(this.$store.state.slidingCards),
       newTrendingArticles: JSON.stringify(this.$store.state.trendings),
-      newKeywordTitle: this.$store.state.sectionTitles['keywords'],
-      newSlidingCardsTitle: this.$store.state.sectionTitles['slidingCards'],
-      newTrendingArticlesTitle: this.$store.state.sectionTitles['trendings']
+      newKeywordTitle: '',
+      newSlidingCardsTitle: '',
+      newTrendingArticlesTitle: ''
     }
   },
   methods: {
@@ -104,7 +104,7 @@ export default {
 
 <style lang="sass">
 .controlPanel
-  background-color: #faf8f6
+  background-color: #f0f0f0
   position: fixed
   top: 0
   right: 0
@@ -113,6 +113,8 @@ export default {
   z-index: 5
   height: 100vh
   overflow-y: scroll
+  -webkit-overflow-scroll: touch
+  
   &-button
     position: fixed
     bottom: 0
@@ -134,8 +136,14 @@ export default {
     padding: 18px
     display: flex
     flex-wrap: wrap
+    margin-left: 18px
+    margin-right: 18px
+    border-radius: 18px
+    margin-bottom: 18px
+    &:last-child
+      margin-bottom: 0
   &-head
-    padding: 30px 18px
+    padding: 30px 36px
   &-headText
     font-size: 22px
     font-weight: bold
@@ -148,8 +156,10 @@ export default {
     display: block
     width: 100%
     margin-bottom: 20px
-    border: 1px solid #b5b1af
+    background-color: #f8f8f8
+    border: none
     border-radius: 10px
-    padding: 8px
+    font-size: 16px
+    padding: 12px
     line-height: 1.6
 </style>

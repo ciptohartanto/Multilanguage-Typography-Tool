@@ -33,10 +33,11 @@ export default {
     flex-wrap: wrap
   &-item
     display: inline-flex
-    padding: 2px 10px
-    border: 2px solid rgba(grey,.4)
-    font-size: 14px
-    border-radius: 10px
-    margin-right: 10px
+    padding: 9px 18px
+    border: 1px solid #e8e8e8
+    font-size: 13px
+    border-radius: 18px
+    margin-right: 12px
     margin-bottom: 10px
+    color: #111
 </style>

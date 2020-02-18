@@ -43,20 +43,20 @@ export default {
     &:last-child
       margin-bottom: 0
   &-left
-    margin-right: 10px
+    margin-right: 14px
   &-right
     overflow: hidden
   &-image
     display: block
-    width: 80px
-    height: 60px
+    width: 93px
+    height: 70px
     border-radius: 8px
     background-size: cover
     background-position: center
     background-repeat: no-repeat
   &-title
     font-size: 16px
-    line-height: 1.4
+    line-height: 1.2
     font-weight: bold
     overflow: hidden
     display: -webkit-box
@@ -66,4 +66,5 @@ export default {
     font-size: 14px
     font-weight: normal
     color: grey
+    margin-top: 10px
 </style>

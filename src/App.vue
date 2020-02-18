@@ -20,7 +20,7 @@ export default {
 @import ./assets/sass/index
 
 #app
-  padding: 18px
+  padding: 18px 18px 0 18px
 
 
 </style>

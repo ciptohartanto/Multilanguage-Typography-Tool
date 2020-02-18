@@ -24,7 +24,7 @@ export default {
   props: {
     slidingCardParentHeight: {
       type: Number,
-      default: ()=>265
+      default: ()=> 265
     },
     slidingCardChildHeight: {
       type: Number,
@@ -44,8 +44,8 @@ export default {
 
 <style lang="sass">
 .slidingCard
-  margin-bottom: 20px
   &-list
+    margin-top: 6px
     display: flex
   &-item
     display: flex
@@ -53,13 +53,13 @@ export default {
     height: auto
     position: relative
     flex-wrap: wrap
-    margin-right: 18px
+    margin-right: 8px
     &:last-child
-     margin-right: 0 
+      margin-right: 0 
   &-image
     display: block
-    width: 200px
-    height: 180px
+    width: 223px
+    height: 170px
     border-radius: 8px
     background-repeat: no-repeat
     background-size: cover
@@ -70,10 +70,15 @@ export default {
     -webkit-line-clamp: 2
     -webkit-box-orient: vertical
     font-size: 16px
+    font-weight: bold
+    line-height: 1.3
+    height: 1.3 * 2 * 1em
     width: 100%
+    margin-bottom: 6px
+    margin-bottom: 8px
   &-subtitle
     color: grey
-    font-size: 14px
+    font-size: 12px
     font-weight: normal
 
 </style>

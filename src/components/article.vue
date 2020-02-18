@@ -44,12 +44,13 @@ export default {
 
 .article
   &-title
-    font-size: 48px
-    line-height: 1.4
-    margin-bottom: 18px
+    font-size: 30px
+    line-height: 1.2
+    margin-bottom: 8px
   
   &-headline
-    font-size: 14px
+    font-size: 12px
+    margin-bottom: 16px
 
   &-date
     color: grey
@@ -59,7 +60,7 @@ export default {
     flex-wrap: wrap
     margin-left: -18px
     margin-right: -18px
-    margin-bottom: 20px
+    margin-bottom: 24px
     
   &-figBg
     display: flex
@@ -69,6 +70,7 @@ export default {
     position: relative
     
   &-figcaption
+    margin-top: 8px
     padding-left: 18px
     padding-right: 18px
     font-size: 12px
