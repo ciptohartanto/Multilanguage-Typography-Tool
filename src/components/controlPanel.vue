@@ -35,7 +35,7 @@
         
         
       
-    .controlPanel-button(@click="unsetPopup") Update
+    .controlPanel-button(@click="unsetPopup")
 </template>
 
 <script>
@@ -133,11 +133,17 @@ export default {
     display: flex
     align-items: center
     justify-content: center
+    &:before
+      content: 'Confirm'
+      position: absolute
+      
     @media screen and (min-width: 1060px)
       position: fixed
       width: 375px
       right: 0
       left: auto
+      &:before
+        content: 'Close This Window'
     
   &-body
     padding-bottom: 100px
