@@ -7,7 +7,7 @@
       span.article-date {{articleHeadlinePublishedDate}}
     figure.article-figure
       .article-figBg
-        .article-lang English
+        .article-lang {{jumbotronTitles[this.$store.state.lang]}}
       figcaption.article-figcaption {{articleImageCaption}}
       
     article.article-content
@@ -33,6 +33,9 @@ export default {
     },
     articleParagraphs(){
       return this.$store.state.article.paragraphs
+    },
+    jumbotronTitles(){
+      return this.$store.state.jumbotronTitles
     }
   }
 }

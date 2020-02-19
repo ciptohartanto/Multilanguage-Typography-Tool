@@ -61,6 +61,13 @@ export const store = new Vuex.Store({
       kr: 'UI 언어',
       th: 'ภาษา UI',
       jp: 'UI言語'
+    },
+    jumbotronTitles: {
+      en: 'English',
+      zh: '中文',
+      kr: '한국어',
+      th: 'ภาษาไทย',
+      jp: '日本語'
     }
   },
   mutations: {
