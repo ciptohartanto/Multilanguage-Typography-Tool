@@ -5,6 +5,20 @@
         .controlPanel-headText Control Panel
         
       .controlPanel-section
+        .controlPanel-title {{languageSettingsTranslation[this.$store.state.lang]}}
+        .controlPanel-selectGroup
+          select.controlPanel-select(v-model="langSelector" @change="setLang")
+            option(value="" selected disabled hidden) select your UI language
+            option(value="en") default Global (EN)
+            option(value="kr") Korean
+            option(value="zh") Mandarin
+            option(value="th") Thai
+            option(value='jp') Japanese
+          .controlPanel-arrow
+            include ./../assets/arrow.svg
+          
+          
+      .controlPanel-section
         .controlPanel-title Article
         input.controlPanel-textarea(type="text" placeholder="Article Title" v-model="newTitle" @input="setNewTitle")
         
@@ -44,6 +58,9 @@ export default {
   computed: {
     isPopup() {
       return this.$store.state.isPopup
+    },
+    languageSettingsTranslation(){
+      return this.$store.state.langTitles
     }
   },
   data() {
@@ -58,7 +75,8 @@ export default {
       newTrendingArticles: JSON.stringify(this.$store.state.trendings),
       newKeywordTitle: '',
       newSlidingCardsTitle: '',
-      newTrendingArticlesTitle: ''
+      newTrendingArticlesTitle: '',
+      langSelector: ''
     }
   },
   methods: {
@@ -97,6 +115,9 @@ export default {
     },
     setTrendingArticlesTitle(){
       this.$store.commit('setTrendingArticlesTitle', this.newTrendingArticlesTitle)
+    },
+    setLang(){
+      this.$store.commit('setLang', this.langSelector)
     }
   }
 }
@@ -178,4 +199,30 @@ export default {
     font-size: 16px
     padding: 12px
     line-height: 1.6
+    
+  &-select
+    appearance: none
+    border: none
+    padding: 12px
+    width: 100%
+    position: relative
+    display: flex
+      
+  &-selectGroup
+    position: relative
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &-arrow
+    width: 20px
+    height: 20px
+    display: flex
+    position: absolute
+    right: 20px
+    top: auto
+    align-items: center
+    justify-content: center
+    fill: grey
 </style>

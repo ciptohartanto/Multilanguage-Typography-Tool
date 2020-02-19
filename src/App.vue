@@ -1,5 +1,5 @@
 <template lang="pug">
-  #app
+  #app(:class="`${lang === '' ? '' : 'lang--' + lang}`")
     layout-home
     component-control-panel
 </template>
@@ -12,6 +12,11 @@ export default {
   components: {
     LayoutHome,
     componentControlPanel
+  },
+  computed: {
+    lang(){
+      return this.$store.state.lang
+    }
   }
 }
 </script>
@@ -40,4 +45,20 @@ body
     align-items: center
     height: 100vh
     background-color: #f0f0f0
+    
+    
+.lang--kr
+  font-family: 'Apple SD Gothic Neo'
+  
+.lang--en
+  font-family: '-apple-system', 'BlinkMacSystemFont'
+  
+.lang--jp
+  font-family: 'Hiragino Sans'
+
+.lang--zh
+  font-family: 'PingFang TC'
+  
+.lang--th
+  font-family: 'Thonburi'
 </style>

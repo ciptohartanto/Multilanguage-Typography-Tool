@@ -53,6 +53,14 @@ export const store = new Vuex.Store({
       keywords: 'Keywords',
       slidingCards: "More in 'Soccer'",
       trendings: 'Trending Now'
+    },
+    lang: 'en',
+    langTitles: {
+      en: 'UI Language',
+      zh: 'UI 語言',
+      kr: 'UI 언어',
+      th: 'ภาษา UI',
+      jp: 'UI言語'
     }
   },
   mutations: {
@@ -94,6 +102,9 @@ export const store = new Vuex.Store({
     },
     setTrendingArticlesTitle(state, val){
       return state.sectionTitles['trendings'] = val
+    },
+    setLang(state, val){
+      return state.lang = val
     }
   }
 })
