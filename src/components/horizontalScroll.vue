@@ -1,19 +1,16 @@
 <template lang="pug">
 .horizontalScroll-parent(:style="{height: parentHeight + 'px'}")
-  .horizontalScroll-child(:style="{height: childHeight + 'px'}")
+  .horizontalScroll-child(:style="{height: 'auto'}")
     slot
 </template>
 <script>
 export default {
   name: 'HorizontalScroll',
   props: {
-    childHeight: {
-      type: Number,
-      default: () => ''
-    },
+
     parentHeight: {
       type: Number,
-      default: () => ''
+      default: () => '100'
     }
   }
 }

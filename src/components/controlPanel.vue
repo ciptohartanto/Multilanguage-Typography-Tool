@@ -211,7 +211,7 @@ export default {
     display: flex
     font-size: 14px
     font-weight: 600
-      
+    background-color: #f8f8f8
   &-selectGroup
     position: relative
     width: 100%

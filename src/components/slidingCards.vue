@@ -71,14 +71,14 @@ export default {
     -webkit-box-orient: vertical
     font-size: 16px
     font-weight: bold
-    line-height: 1.3
-    height: 1.3 * 2 * 1em
+    line-height: 21px
+    height: 21px * 2
     width: 100%
-    margin-bottom: 6px
     margin-bottom: 8px
   &-subtitle
     color: grey
     font-size: 12px
+    line-height: 14px
     font-weight: normal
 
 </style>
