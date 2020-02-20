@@ -21,5 +21,5 @@ export default {
   color: #111
   font-weight: bold
   margin-top: 50px
-  margin-bottom: 8px
+  margin-bottom: 14px
 </style>
