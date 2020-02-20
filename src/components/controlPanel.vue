@@ -125,7 +125,7 @@ export default {
 
 <style lang="sass">
 .controlPanel
-  background-color: #f0f0f0
+  background-color: white
   position: fixed
   top: 0
   right: 0
@@ -136,7 +136,6 @@ export default {
   overflow-y: scroll
   -webkit-overflow-scroll: touch
   @media screen and (min-width: 1060px)
-    background-color: white
     position: fixed
     width: 375px
     right: 0
