@@ -200,6 +200,7 @@ export default {
     font-size: 14px
     font-weight: 500
     padding: 15px
+    margin-bottom: 12px
     line-height: 1.6
     
   &-select
