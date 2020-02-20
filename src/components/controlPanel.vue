@@ -141,15 +141,16 @@ export default {
     width: 375px
     right: 0
     left: auto
+    box-shadow: 3px 10px 10px rgba(black, .2)
   &-button
     position: fixed
     bottom: 0
     left: 0
     right: 0
-    background-color: green
+    background-color: black
     height: 60px
-    font-size: 18px
-    font-weight: bold
+    font-size: 13px
+    font-weight: 800
     color: #fff
     display: flex
     align-items: center
@@ -162,7 +163,7 @@ export default {
       position: fixed
       width: 375px
       right: 0
-      left: auto
+      left: auto      
       &:before
         content: 'Close This Window'
     
@@ -185,28 +186,31 @@ export default {
     font-size: 22px
     font-weight: bold
   &-title
-    font-size: 18px
-    font-weight: bold
+    font-size: 15px
+    font-weight: 800
     width: 100%
-    margin-bottom: 20px
+    margin-bottom: 15px
   &-textarea
     display: block
     width: 100%
-    margin-bottom: 20px
+    margin-bottom: 0px
     background-color: #f8f8f8
     border: none
     border-radius: 10px
-    font-size: 16px
-    padding: 12px
+    font-size: 14px
+    font-weight: 500
+    padding: 15px
     line-height: 1.6
     
   &-select
     appearance: none
     border: none
-    padding: 12px
+    padding: 16px
     width: 100%
     position: relative
     display: flex
+    font-size: 14px
+    font-weight: 600
       
   &-selectGroup
     position: relative
@@ -216,8 +220,8 @@ export default {
     justify-content: center
 
   &-arrow
-    width: 20px
-    height: 20px
+    width: 14px
+    height: 14px
     display: flex
     position: absolute
     right: 20px

@@ -36,7 +36,7 @@ export default {
   z-index: 3
   cursor: pointer
   @media screen and (min-width: 1060px)
-    left: 590px
+    left: calc(50vw + 170px)
     top: 50%
     transform: translateY(-50%)
     &:before

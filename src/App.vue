@@ -34,8 +34,7 @@ export default {
     overflow-y: scroll
     border-radius: 8px
     display: block
-    margin-left: 170px
-    
+    margin-left: 30vw
     box-shadow: 0 0 10px rgba(black, .1)
     
 
@@ -44,7 +43,7 @@ body
     display: flex
     align-items: center
     height: 100vh
-    background-color: #f0f0f0
+    background-color: white
     
     
 .lang--kr

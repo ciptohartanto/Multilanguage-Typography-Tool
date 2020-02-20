@@ -69,7 +69,7 @@ export default {
     display: flex
     width: 100%
     height: 150px
-    background-color: black
+    background-color: #e2e2e2
     position: relative
     
   &-figcaption
