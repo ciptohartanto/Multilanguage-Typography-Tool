@@ -8,8 +8,8 @@
         .controlPanel-title {{languageSettingsTranslation[this.$store.state.lang]}}
         .controlPanel-selectGroup
           select.controlPanel-select(v-model="langSelector" @change="setLang")
-            option(value="" selected disabled hidden) select your UI language
-            option(value="en") default Global (EN)
+            option(value="" selected disabled hidden) Select your UI language
+            option(value="en") Global (EN)
             option(value="kr") Korean
             option(value="zh") Mandarin
             option(value="th") Thai
