@@ -17,6 +17,9 @@ export default {
     lang(){
       return this.$store.state.lang
     }
+  },
+  created () {
+    document.title = "LDSG - Typography Checker";
   }
 }
 </script>
