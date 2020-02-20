@@ -75,6 +75,7 @@ export default {
     height: 21px * 2
     width: 100%
     margin-bottom: 8px
+    margin-top: 6px
   &-subtitle
     color: grey
     font-size: 12px
