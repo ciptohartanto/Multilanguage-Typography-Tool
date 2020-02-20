@@ -2,7 +2,6 @@
   .article
     h1.article-title {{articleTitle}}
     h4.article-headline
-      span.bold By 
       span.bold {{articleHeadlineAuthor}} 
       span.article-date {{articleHeadlinePublishedDate}}
     figure.article-figure

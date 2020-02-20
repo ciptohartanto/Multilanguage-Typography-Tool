@@ -6,7 +6,7 @@ export const store = new Vuex.Store({
   state: {
     article: {
       title: "Training Gallery Jose's First Session",
-      headline_author: "Alex Greenberg",
+      headline_author: "By Alex Greenberg",
       headline_published_date: "February 28, 2020",
       image_caption: "Feb 11, 2020. Photographer: Paul Yeung/Bloomberg",
       paragraphs: {
@@ -90,7 +90,7 @@ export const store = new Vuex.Store({
       return state.article.image_caption = val
     },
     setNewArticleText(state, val) {
-      return state.article.paragraph = val
+      return state.article.paragraphs = val
     },
     setNewKeywords(state, val){
       return state.keywords = val
