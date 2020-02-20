@@ -43,7 +43,7 @@ body
     display: flex
     align-items: center
     height: 100vh
-    background-color: white
+    background-color: #F2F3F4
     
     
 .lang--kr
